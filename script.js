@@ -1,9 +1,14 @@
 //Brewery API call
-
-var cityName = "cleveland";
-var breweryURL = "https://api.openbrewerydb.org/breweries?by_city=" + cityName;
-
 function breweryCall() {
+
+  var cityName = "cleveland";
+  var breweryType = "brewpub"
+  var breweryURL = "https://api.openbrewerydb.org/breweries?by_city=" + cityName;
+  
+  if(breweryType) {
+    breweryURL = breweryURL + "&by_type=" + breweryType; 
+  }
+
 
 $.ajax({
 
