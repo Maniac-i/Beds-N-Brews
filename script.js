@@ -15,14 +15,17 @@ method: "GET"
 
   console.log(response);
 
+  //created variables for the inforamtion we want to display
   var breweryName = response[0].name;
-  console.log(breweryName);
-
   var breweryAddress = response[0].street;
-  console.log(breweryAddress);
-
   var breweryWebsite = response[0].website_url;
-  console.log(breweryWebsite);
+  
+  //create html elements to display information
+  createdDiv = $("<div>").attr("class", "brewery");
+  createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
+  createdP1 = $("<p>" + breweryAddress + "<p>").attr("class", "breweryAddress");
+  createdP2 = $("<p>" + breweryWebsite + "<p>").attr("class", "breweryWebsite");
+
 
   })
 }
