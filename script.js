@@ -34,3 +34,13 @@ method: "GET"
 }
 
 breweryCall();
+
+//add click event to search button
+//calls the API functions
+$(".searchButton").on("click", function(event) {
+
+  event.preventDefault;
+
+  breweryCall();
+  //Input hotel API call
+});
