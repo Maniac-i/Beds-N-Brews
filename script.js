@@ -15,6 +15,15 @@ method: "GET"
 
   console.log(response);
 
+  var breweryName = response[0].name;
+  console.log(breweryName);
+
+  var breweryAddress = response[0].street;
+  console.log(breweryAddress);
+
+  var breweryWebsite = response[0].website_url;
+  console.log(breweryWebsite);
+
   })
 }
 
