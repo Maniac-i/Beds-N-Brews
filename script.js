@@ -32,17 +32,24 @@ function breweryCall() {
   }).then(function (response) {
 
     console.log(response);
-    //created variables for the inforamtion we want to display
-    var breweryName = response[0].name;
-    var breweryAddress = response[0].street;
-    var breweryWebsite = response[0].website_url;
-    
+  
     //Grabs the HTML element that the api information will be appended too
     mainDiv = $(".mainDiv");
 
     //clear previous search results
     mainDiv.empty();
-    
+
+    //sets variable to the length of the array returned by the API call
+    var arrayLength = response.length;
+
+    //Loop to display multiple resutls
+    for (var i = 0; i < arrayLength; i++) {
+
+      //created variables for the inforamtion we want to display
+      var breweryName = response[i].name;
+      var breweryAddress = response[i].street;
+      var breweryWebsite = response[i].website_url;
+
     //create html elements to display information
     createdDiv = $("<div>").attr("class", "brewery");
     createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
@@ -52,6 +59,7 @@ function breweryCall() {
     //appends created HTML elements
     mainDiv.append(createdDiv, createdH2, "<hr>", createdP1, createdP2);
 
+    }
     //set localStorage
     localStorage.setItem("searchedCity", cityName);
   })
