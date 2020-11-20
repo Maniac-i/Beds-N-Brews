@@ -21,11 +21,14 @@ method: "GET"
   var breweryWebsite = response[0].website_url;
   
   //create html elements to display information
+  mainDiv = $(".mainDiv");
+  
   createdDiv = $("<div>").attr("class", "brewery");
   createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
   createdP1 = $("<p>" + breweryAddress + "<p>").attr("class", "breweryAddress");
-  createdP2 = $("<p>" + breweryWebsite + "<p>").attr("class", "breweryWebsite");
+  createdP2 = $("<a href=" + breweryWebsite + ">" + breweryWebsite + "</a>").attr("class", "breweryWebsite");
 
+  mainDiv.append(createdDiv, createdH2, createdP1, createdP2);
 
   })
 }
