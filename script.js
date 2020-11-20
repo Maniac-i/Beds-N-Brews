@@ -3,13 +3,13 @@ function setInitialDisplay() {
 
   if (!localStorage.getItem("searchedCity")) {
     breweryCall("Cleveland");
-   // hotelSearch("Cleveland");
+    // hotelSearch("Cleveland");
   } else {
     breweryCall(localStorage.getItem("searchedCity"));
-   // hotelSearch(localStorage.getItem("searchedCity"));
+    // hotelSearch(localStorage.getItem("searchedCity"));
   }
 }
- setInitialDisplay();
+setInitialDisplay();
 
 //Brewery API call
 function breweryCall() {
@@ -32,7 +32,7 @@ function breweryCall() {
   }).then(function (response) {
 
     console.log(response);
-  
+
     //Grabs the HTML element that the api information will be appended too
     mainDiv = $(".mainDiv");
 
@@ -50,14 +50,14 @@ function breweryCall() {
       var breweryAddress = response[i].street;
       var breweryWebsite = response[i].website_url;
 
-    //create html elements to display information
-    createdDiv = $("<div>").attr("class", "brewery");
-    createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
-    createdP1 = $("<p> Address: " + breweryAddress + "<p>").attr("class", "breweryAddress");
-    createdP2 = $("<p>Website: <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
+      //create html elements to display information
+      createdDiv = $("<div>").attr("class", "brewery");
+      createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
+      createdP1 = $("<p> Address: " + breweryAddress + "<p>").attr("class", "breweryAddress");
+      createdP2 = $("<p>Website: <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
 
-    //appends created HTML elements
-    mainDiv.append(createdDiv, createdH2, "<hr>", createdP1, createdP2);
+      //appends created HTML elements
+      mainDiv.append(createdDiv, createdH2, "<hr>", createdP1, createdP2);
 
     }
     //set localStorage
