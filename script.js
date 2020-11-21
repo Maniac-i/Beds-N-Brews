@@ -52,7 +52,7 @@ function breweryCall() {
       var breweryWebsite = response[i].website_url;
 
       //create html elements to display information
-      createdDiv = $("<div>").attr("class", "brewery");
+      createdDiv = $("<div>").attr("class", "brewery box");
       createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
       createdP1 = $("<p> Address: " + breweryAddress + "<p>").attr("class", "breweryAddress");
       createdP2 = $("<p>Website: <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
