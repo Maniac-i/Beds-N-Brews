@@ -78,3 +78,5 @@ $(".searchButton").on("click", function (event) {
   breweryCall();
   hotelSearch(cityName);
 });
+
+//thing
