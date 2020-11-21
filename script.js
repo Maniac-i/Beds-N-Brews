@@ -53,8 +53,8 @@ function breweryCall() {
       //create html elements to display information
       var createdDiv = $("<div>").attr("class", "brewery box");
       var createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
-      var createdP1 = $("<p> Address: " + breweryAddress + "<p>").attr("class", "breweryAddress");
-      var createdP2 = $("<p>Website: <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
+      var createdP1 = $("<p> <span>Address:</span> " + breweryAddress + "<p>").attr("class", "breweryAddress");
+      var createdP2 = $("<p> <span>Website:</span> <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
 
       //appends created HTML elements
       createdDiv.append(createdH2, "<hr>", createdP1, createdP2)
