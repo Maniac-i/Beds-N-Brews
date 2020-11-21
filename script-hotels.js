@@ -11,14 +11,14 @@ function hotelSearch(cityName) {
 
     //code snippet for AJAX call from the Hotels API Dojo Documentation
     const settings = {
-	    "async": true,
-	    "crossDomain": true,
+        "async": true,
+        "crossDomain": true,
         "url": queryURL,
         "method": "GET",
-	    "headers": {
-		    "x-rapidapi-key": "0e5394610fmsh72d5e907462569dp145318jsneb5cc0c2b49e",
-		    "x-rapidapi-host": "hotels4.p.rapidapi.com"
-	    }
+        "headers": {
+            "x-rapidapi-key": "0e5394610fmsh72d5e907462569dp145318jsneb5cc0c2b49e",
+            "x-rapidapi-host": "hotels4.p.rapidapi.com"
+        }
     };
 
     $.ajax(settings).done(function (response) {
@@ -27,11 +27,26 @@ function hotelSearch(cityName) {
         console.log(hotelsArray);
         var hotelsArrayLength = hotelsArray.length;
 
+        //Div the api info will be appended to
+        var mainDiv = $(".hotels");
+        //clear previous search results
+        mainDiv.empty();
+
         //for loop looping through the array of returned hotels
         for (var i = 0; i < hotelsArrayLength; i++) {
+           
+            //variable to assign hotel names to
             var hotelName = hotelsArray[i].name;
             console.log(hotelName);
+
+            //Created html elements to display information
             var hotelNameHTML = $("<h2>").text(hotelName);
+            var createdDiv = $("<div>").attr("class", "hotel box");
+            var createdH2 = hotelNameHTML.attr("class", "hotelName");
+
+            //appends created HTML elements
+            createdDiv.append(createdH2, "<hr>");
+            mainDiv.append(createdDiv);
         }
 
     });
