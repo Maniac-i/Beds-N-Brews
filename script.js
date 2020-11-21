@@ -34,7 +34,7 @@ function breweryCall() {
     console.log(response);
 
     //Grabs the HTML element that the api information will be appended too
-    var mainDiv = $(".brewerys");
+    var mainDiv = $(".breweries");
 
     //clear previous search results
     mainDiv.empty();
