@@ -23,3 +23,7 @@ hr {
 span {
   font-weight: bolder;
 }
+
+.columnMargin {
+  margin-right: 20px;
+}
