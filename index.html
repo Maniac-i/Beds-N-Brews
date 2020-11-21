@@ -19,8 +19,35 @@
   </div> -->
 
   <!-- Menu/Navbar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://rlv.zcache.com/frothy_cartoon_glass_beer_mug_with_beer_classic_round_sticker-r845186bafef24975bb6f15da2c34a974_0ugmp_8byvr_704.jpg" >
+      </a>
+      <a class="navbar-item">
+        BEDS 'N BREWS
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <a class="navbar-item">
+        Search
+      </a>
+      <a href="#hotel-navbar" class="navbar-item">
+        Hotels
+      </a>
+      <a href="#brew-navbar" class="navbar-item">
+        Breweries
+      </a>
+    </div>
+  </nav>
 
   <!-- Cover with search bar -->
+
   <section
   class="hero is-link is-fullheight-with-navbar"
   style="background-image: url('cheers.jpg')"
@@ -39,7 +66,7 @@
     <div class="columns is-light">
       
       <!--Displays Hotel Information-->
-      <div class="column hotels">
+      <div id="hotel-navbar" class="column hotels">
         <h2>Hotels:</h2>
         <div class="hotels">
 
@@ -47,7 +74,7 @@
       </div>
 
       <!--Displays Brewery Information-->
-      <div class="column brewerys">
+      <div id="brew-navbar" class="column brewerys">
 
         <h2>Breweries:</h2>
         <div class="breweries">
