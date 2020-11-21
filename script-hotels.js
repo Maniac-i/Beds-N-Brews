@@ -29,6 +29,8 @@ function hotelSearch(cityName) {
 
         //Div the api info will be appended to
         var mainDiv = $(".hotels");
+        //clear previous search results
+        mainDiv.empty();
 
         //for loop looping through the array of returned hotels
         for (var i = 0; i < hotelsArrayLength; i++) {
