@@ -37,15 +37,17 @@ function hotelSearch(cityName) {
            
             //variable to assign hotel names to
             var hotelName = hotelsArray[i].name;
+            var lat = hotelsArray[i].latitude;
+            var long = hotelsArray[i].longitude
             console.log(hotelName);
 
             //Created html elements to display information
             var hotelNameHTML = $("<h2>").text(hotelName);
             var createdDiv = $("<div>").attr("class", "hotel box");
             var createdH2 = hotelNameHTML.attr("class", "hotelName");
-
+            var map = $('<img src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/' + long + ',' + lat + ',14/400x240?access_token=pk.eyJ1Ijoiam9lbWFuaWFjaSIsImEiOiJja2hzNDVkeHcwNjdsMnd0OTJ2NXM5OHRiIn0.iftE3PSzzKefF9YT6OjliQ" alt="Map of the Edmund Pettus Bridge in Selma, Alabama.">')
             //appends created HTML elements
-            createdDiv.append(createdH2, "<hr>");
+            createdDiv.append(createdH2, "<hr>", map);
             mainDiv.append(createdDiv);
         }
 
