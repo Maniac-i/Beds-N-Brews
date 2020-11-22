@@ -37,6 +37,11 @@ span {
 .hero-body {
   text-align: center;
 }
+#background {
+  background-image: url('./images/brewery2.jpg');
+  background-repeat: no-repeat;
+  background-size: 1450px 800px;
+}
 
 .staticMap {
   margin:  0 auto;
