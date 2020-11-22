@@ -40,7 +40,13 @@ span {
 #background {
   background-image: url('./images/brewery2.jpg');
   background-repeat: no-repeat;
-  background-size: 1450px 800px;
+  background-size: 100% 100%;
+}
+#myTitle {
+  font-family: 'Nerko One', cursive;
+  font-size: 60pt;
+  color: rgb(247, 237, 100);
+  text-shadow: 5px 3px 2px #0e0d0d;
 }
 
 .staticMap {
