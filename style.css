@@ -29,6 +29,15 @@ span {
   margin-right: 20px;
 }
 
+#searchBar {
+  position: absolute;
+  left: 71vh;
+  bottom: 30vh;
+}
+.hero-body {
+  text-align: center;
+}
+
 .staticMap {
   margin:  0 auto;
   align-items: center;
