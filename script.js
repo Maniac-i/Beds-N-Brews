@@ -34,8 +34,7 @@ function breweryCall() {
     console.log(response);
 
     //Grabs the HTML element that the api information will be appended too
-    //WILL NEED TO BE UPDATED WHEN HTML PAGE IS CREATED
-    mainDiv = $(".mainDiv");
+    var mainDiv = $(".breweries");
 
     //clear previous search results
     mainDiv.empty();
@@ -52,10 +51,10 @@ function breweryCall() {
       var breweryWebsite = response[i].website_url;
 
       //create html elements to display information
-      createdDiv = $("<div>").attr("class", "brewery box");
-      createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
-      createdP1 = $("<p> Address: " + breweryAddress + "<p>").attr("class", "breweryAddress");
-      createdP2 = $("<p>Website: <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
+      var createdDiv = $("<div>").attr("class", "brewery box");
+      var createdH2 = $("<h2>" + breweryName + "<h2>").attr("class", "breweryName");
+      var createdP1 = $("<p> <span>Address:</span> " + breweryAddress + "<p>").attr("class", "breweryAddress");
+      var createdP2 = $("<p> <span>Website:</span> <a href=" + breweryWebsite + ">" + breweryWebsite + "</a></p>").attr("class", "breweryWebsite");
 
       //appends created HTML elements
       createdDiv.append(createdH2, "<hr>", createdP1, createdP2)

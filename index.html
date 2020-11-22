@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hotel/Restaurant Search App</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
-    />
-  </head>
 
-  <body>
-    <!--<h1>Hotel/Restaurants Search App</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel/Restaurant Search App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css">    
+</head>
+
+<body>
+  <!--<h1>Hotel/Restaurants Search App</h1>
   <input type="search" />
   <div>Enter your zip code here</div>
   <div>DropDow</div>
@@ -20,54 +19,75 @@
     <textarea id="colum2">Yelp Restaurant API search result</textarea>
   </div> -->
 
-    <!-- Menu/Navbar -->
+  <!-- Menu/Navbar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://rlv.zcache.com/frothy_cartoon_glass_beer_mug_with_beer_classic_round_sticker-r845186bafef24975bb6f15da2c34a974_0ugmp_8byvr_704.jpg" >
+      </a>
+      <a class="navbar-item">
+        BEDS 'N BREWS
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <a class="navbar-item">
+        Search
+      </a>
+      <a href="#hotel-navbar" class="navbar-item">
+        Hotels
+      </a>
+      <a href="#brew-navbar" class="navbar-item">
+        Breweries
+      </a>
+    </div>
+  </nav>
 
-    <!-- Cover with search bar -->
+  <!-- Cover with search bar -->
 
-<<<<<<< HEAD
-    <section
-      class="hero is-link is-fullheight-with-navbar"
-      style="background-image: url('cheers.jpg')"
-    >
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Hello World from Liban</h1>
-          <h2 class="subtitle">this is our initial cover</h2>
-        </div>
-=======
+  <section
+  class="hero is-link is-fullheight-with-navbar"
+  style="background-image: url('cheers.jpg')"
+>
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Hello World from Liban</h1>
+      <h2 class="subtitle">this is our initial cover</h2>
+    </div>
+  </div>
+</section>
+
+
     <!-- section 2 is the 2 search boxes-->
   <section class="section">
     <div class="columns">
       
-      //Displays Hotel Information
-      <div class="column hotels">
-        First column
+      <!--Displays Hotel Information-->
+
+      <div id="hotel-navbar" class="column columnMargin">
+        <h2 class="header">Hotels:</h2>
+        <br>
+        <div class="hotels">
+
+        </div>
       </div>
 
-      //Displays Brewery Information
-      <div class="column brewerys">
-        Second column
->>>>>>> main
+      <!--Displays Brewery Information-->
+
+      <div id="brew-navbar" class="column">
+        <h2 class="header">Breweries:</h2>
+        <br>
+        <div class="breweries">
+          
+        </div>
       </div>
     </section>
 
-    <!-- section 2 is the 2 search boxes-->
-    <section class="section">
-      <div class="columns">
-        //Displays Hotel Information
-        <div class="column hotels">First column</div>
-        //Displays Brewery Information
-        <div class="column brewerys">Second column</div>
-      </div>
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="script-hotels.js"></script>
-
-    <!-- Footer -->
-
-<<<<<<< HEAD
+<!-- Footer -->
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
@@ -82,8 +102,9 @@
         </p>
       </div>
     </footer>
-=======
->>>>>>> main
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script-hotels.js"></script>
+<script src="script.js"></script>
   </body>
 </html>
