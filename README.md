@@ -28,6 +28,6 @@ Here is where we discuss our solution and how our web app works
 ## Helpful Links
 * [Git site](https:// ... insert link)
 * [Hotel Server-Side API](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-* [Brewery Server-Side API](https://www.learnenough.com/git-tutorial/getting_started)
+* [Brewery Server-Side API](https://rapidapi.com/apidojo/api/hotels4/endpoints)
 
 - - -
