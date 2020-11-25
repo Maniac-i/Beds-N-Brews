@@ -1,5 +1,5 @@
 .column {
-  background-color: rgb(56, 56, 65);
+  background-color: rgb(64, 83, 74);
 }
 
 .header {
@@ -58,6 +58,10 @@ p {
 .navbar {
   position: sticky;
   top: 0;
+}
+
+.navbar-item {
+  font-family: 'Unica One', cursive;
 }
 
 .staticMap {
