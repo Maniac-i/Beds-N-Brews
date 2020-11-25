@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hotel/Restaurant Search App</title>
+  <title>Beds 'N Brews</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&display=swap" rel="stylesheet">
@@ -67,16 +67,31 @@
             <a class="button is-warning">Search</a>
           </div>
         </div>
+
         <div class="dropdown">
-  <div class="dropdown-trigger">
-    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-      <span>Select Brewery Type</span>
-      <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </div>
-</div>
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>Select Brewery Type</span>
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a class="dropdown-item">
+                Brewpub
+              </a>
+              <a class="dropdown-item">
+                Microbrewery
+              </a>
+              <a class="dropdown-item">
+                Nanobrewery
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
