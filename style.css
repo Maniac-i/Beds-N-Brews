@@ -1,5 +1,9 @@
 .column {
   background-color: rgb(97, 126, 112);
+  border-radius: 15px;
+  border-color: rgb(5, 32, 5);
+  border-width: 5px;
+  border-style: solid;
 }
 
 .header {
@@ -22,6 +26,7 @@ hr {
 
 .box {
   background-color: rgb(183, 183, 185);
+ 
 }
 
 span {
