@@ -74,3 +74,14 @@ p {
   align-items: center;
   text-align: center;
 }
+
+.searchButton, .input {
+  font-family: 'Unica One', cursive;
+}
+
+.button {
+  background-color: rgb(97, 126, 112);
+  border-color: rgb(5, 32, 5);
+  border-width: 3px;
+  color: white;
+}
