@@ -17,8 +17,8 @@ function hotelSearch(inputtedCity) {
         "url": queryURL,
         "method": "GET",
         "headers": {
-            "x-rapidapi-key": "0e5394610fmsh72d5e907462569dp145318jsneb5cc0c2b49e",
-            "x-rapidapi-host": "hotels4.p.rapidapi.com"
+           // "x-rapidapi-key": "5d61db7820mshae4e4e841946243p1572eejsn52ba1774ec3f",
+            //"x-rapidapi-host": "hotels4.p.rapidapi.com"
         }
     };
 
