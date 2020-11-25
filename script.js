@@ -3,20 +3,23 @@ function setInitialDisplay() {
 
   if (!localStorage.getItem("searchedCity")) {
     breweryCall("Cleveland");
-    // hotelSearch("Cleveland");
+    hotelSearch("Cleveland");
   } else {
     breweryCall(localStorage.getItem("searchedCity"));
-    // hotelSearch(localStorage.getItem("searchedCity"));
+    hotelSearch(localStorage.getItem("searchedCity"));
   }
 }
 setInitialDisplay();
 
 //Brewery API call
-function breweryCall() {
+function breweryCall(inputtedCity) {
 
-  var cityName = "cleveland";
+  var cityName = inputtedCity;
   var breweryType = "brewpub"
   var breweryURL = "https://api.openbrewerydb.org/breweries?by_city=" + cityName;
+  //set localStorage
+
+
 
   //Updates the breweryURL if a breweryType was selected
   if (breweryType) {
@@ -61,21 +64,20 @@ function breweryCall() {
       mainDiv.append(createdDiv);
 
     }
-    //set localStorage
-    localStorage.setItem("searchedCity", cityName);
   })
 }
-
-breweryCall();
 
 //add click event to search button
 //calls the API functions
 $(".searchButton").on("click", function (event) {
 
-  event.preventDefault;
+  event.preventDefault();
 
-  breweryCall();
-  hotelSearch(cityName);
+  var inputtedCity = $(".input").val();
+
+  localStorage.setItem("searchedCity", inputtedCity);
+
+  breweryCall(inputtedCity);
+  hotelSearch(inputtedCity);
 });
 
-//thing

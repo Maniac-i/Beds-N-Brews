@@ -1,9 +1,10 @@
 //this needs to be edited to be an input for the search function
 //hard coded in city name for the time being
-var cityName_hardcode = "minneapolis";
+//var cityName_hardcode = "minneapolis";
 
-function hotelSearch(cityName) {
-    var cityName = cityName.toString();
+
+function hotelSearch(inputtedCity) {
+    var cityName = inputtedCity;
     //need to add some functionality that changes spaces to '%20'
     var cityQuery = "&query=" + cityName;
     var baseURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US";
@@ -34,7 +35,7 @@ function hotelSearch(cityName) {
 
         //for loop looping through the array of returned hotels
         for (var i = 0; i < hotelsArrayLength; i++) {
-           
+
             //variable to assign hotel names to
             var hotelName = hotelsArray[i].name;
             var lat = hotelsArray[i].latitude;
@@ -54,4 +55,3 @@ function hotelSearch(cityName) {
     });
 }
 
-hotelSearch(cityName_hardcode);
