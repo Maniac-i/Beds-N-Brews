@@ -1,28 +1,41 @@
 .column {
-  background-color: rgb(56, 56, 65);
+  background-color: rgb(97, 126, 112);
+  border-radius: 15px;
+  border-color: rgb(5, 32, 5);
+  border-width: 5px;
+  border-style: solid;
 }
 
 .header {
   font-size: 35px;
   font-weight: bold;
-  color: white;
+  font-family: 'Nerko One', cursive;
+  color: rgb(247, 237, 100);
+  text-shadow: 5px 3px 2px #0e0d0d;
 }
 
 .breweryName, .hotelName {
-  font-size: 25px;
+  font-size: 40px;
+  font-family: 'Unica One', cursive;
 }
 
 hr {
   margin-top: 10px;
-  background-color: goldenrod;
+  background-color: rgb(247, 237, 100);
 }
 
 .box {
   background-color: rgb(183, 183, 185);
+ 
 }
 
 span {
   font-weight: bolder;
+  font-family: 'Unica One', cursive;
+}
+
+p {
+  font-family: 'Unica One', cursive;
 }
 
 .columnMargin {
@@ -52,8 +65,23 @@ span {
   top: 0;
 }
 
+.navbar-item {
+  font-family: 'Unica One', cursive;
+}
+
 .staticMap {
   margin:  0 auto;
   align-items: center;
   text-align: center;
+}
+
+.searchButton, .input {
+  font-family: 'Unica One', cursive;
+}
+
+.button {
+  background-color: rgb(97, 126, 112);
+  border-color: rgb(5, 32, 5);
+  border-width: 3px;
+  color: white;
 }
