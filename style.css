@@ -35,7 +35,7 @@ span {
 #background {
   background-image: url('./images/brewery2.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 #myTitle {
   font-family: 'Nerko One', cursive;
