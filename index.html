@@ -73,31 +73,14 @@
           </div>
         </div>
 
-        <div class="dropdown">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>Select Brewery Type</span>
-              <span class="icon">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <a class="dropdown-item">
-                Brewpub
-              </a>
-              <a class="dropdown-item">
-                Microbrewery
-              </a>
-              <a class="dropdown-item">
-                Nanobrewery
-              </a>
-            </div>
-          </div>
+        <div class="select">
+          <select id="breweryType">
+            <option value="">Select Brewery Type</option>
+            <option value="brewpub">Brewpub</option>
+            <option value="micro">Micro Brewery</option>
+            <option value="nano">Nano Brewery</option>
+          </select>
         </div>
-      </div>
-    </div>
   </section>
 
 
