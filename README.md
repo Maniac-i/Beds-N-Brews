@@ -37,7 +37,7 @@ Here is where we discuss our solution and how our web app works
 
 ## Helpful Links
 * [Git Site](https://maniac-i.github.io/Beds-N-Brews/)
-* [Hotel Server-Side API](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-* [Brewery Server-Side API](https://rapidapi.com/apidojo/api/hotels4/endpoints)
+* [Brewery Server-Side API](https://www.openbrewerydb.org/documentation)
+* [Hotel Server-Side API](https://rapidapi.com/apidojo/api/hotels4/endpoints)
 
 - - -
