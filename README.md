@@ -3,7 +3,10 @@
 ## Overview
 
 ```
-For Project 1, our team was asked to use the skills we have gained thus far at The Ohio State University Coding Boot Camp to build a web application from scratch. Our web application must integrate data received from multiple server-side API requests to solve a real-world problem.
+For Project 1, our team was asked to use the skills we have gained thus far at 
+The Ohio State University Coding Boot Camp to build a web application from 
+scratch. Our web application must integrate data received from multiple 
+server-side API requests to solve a real-world problem.
 ```
 
 ## The User Story
