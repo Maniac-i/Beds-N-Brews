@@ -32,7 +32,15 @@ SO THAT I can plan a trip accordingly.
 ## Solution
 
 ```
-Here is where we discuss our solution and how our web app works
+
+As the statistics above show, Americans love to travel. America’s hotels are filled with primarily domestic travelers who are there for leisure. We know that traveler's value where they stay and where they eat and drink because those are two of their top three expenses. Mobile search results show that US travelers prefer activities that are in proximity. Therefore, we have developed a web application that let’s travelers find hotels and brewery. This allows users to search hotels and breweries before deciding which city to travel to.  
+
+Insert Image 
+
+Here is an explanation of how to use the Beds-N-Brews web application. 
+
+The first step that a traveler needs to take when planning their next trip is to go to the Beds-N-Brews site. Next, enter a city that you are interested in visiting in the search bar. Then press the search button. Then scroll through the list of hotel and breweries. You are provided with a map of the hotels and the address of the breweries. If a brewery has a website, then a link to their company site is provided. You can use this information to find the best hotel and brewery combination for you.  
+
 ```
 
 ## Helpful Links
