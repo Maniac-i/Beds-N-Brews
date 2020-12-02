@@ -40,8 +40,6 @@ that US travelers prefer activities that are in proximity. Therefore, we have de
 web application that let’s travelers find hotels and brewery. This allows users to search hotels 
 and breweries before deciding which city to travel to.  
 
-![image](https://user-images.githubusercontent.com/71363204/100807737-d6018400-3400-11eb-9f79-52ada6da7b02.png) 
-
 Here is an explanation of how to use the Beds-N-Brews web application. 
 
 The first step that a traveler needs to take when planning their next trip is to go to the 
@@ -57,5 +55,5 @@ to find the best hotel and brewery combination for you.
 * [Git Site](https://maniac-i.github.io/Beds-N-Brews/)
 * [Brewery Server-Side API](https://www.openbrewerydb.org/documentation)
 * [Hotel Server-Side API](https://rapidapi.com/apidojo/api/hotels4/endpoints)
-
+  
 - - -
