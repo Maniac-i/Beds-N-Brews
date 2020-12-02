@@ -57,5 +57,6 @@ to find the best hotel and brewery combination for you.
 * [Git Site](https://maniac-i.github.io/Beds-N-Brews/)
 * [Brewery Server-Side API](https://www.openbrewerydb.org/documentation)
 * [Hotel Server-Side API](https://rapidapi.com/apidojo/api/hotels4/endpoints)
+* ![CoverImage](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2019%2F07%2F23%2Fhere-are-the-coolest-new-cars-for-2020%2F&psig=AOvVaw20nNXGXSF58rO2I22l0io3&ust=1606958111545000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKC27M6Pru0CFQAAAAAdAAAAABAD)
 
 - - -
