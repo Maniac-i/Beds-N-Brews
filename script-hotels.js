@@ -1,11 +1,8 @@
-//this needs to be edited to be an input for the search function
-//hard coded in city name for the time being
-//var cityName_hardcode = "minneapolis";
 
-
+//hotel api call function
 function hotelSearch(inputtedCity) {
+
     var cityName = inputtedCity;
-    //need to add some functionality that changes spaces to '%20'
     var cityQuery = "&query=" + cityName;
     var baseURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US";
     var queryURL = baseURL + cityQuery;
@@ -23,13 +20,13 @@ function hotelSearch(inputtedCity) {
     };
 
     $.ajax(settings).done(function (response) {
-        console.log(response);
+        
         var hotelsArray = response.suggestions[3].entities;
-        console.log(hotelsArray);
         var hotelsArrayLength = hotelsArray.length;
 
         //Div the api info will be appended to
         var mainDiv = $(".hotels");
+
         //clear previous search results
         mainDiv.empty();
 
@@ -40,13 +37,15 @@ function hotelSearch(inputtedCity) {
             var hotelName = hotelsArray[i].name;
             var lat = hotelsArray[i].latitude;
             var long = hotelsArray[i].longitude
-            console.log(hotelName);
 
             //Created html elements to display information
             var hotelNameHTML = $("<h2>").text(hotelName);
             var createdDiv = $("<div>").attr("class", "hotel box");
             var createdH2 = hotelNameHTML.attr("class", "hotelName");
-            var map = $('<div class="imageDiv"><img src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/' + long + ',' + lat + ',14/400x240?access_token=pk.eyJ1Ijoiam9lbWFuaWFjaSIsImEiOiJja2hzNDVkeHcwNjdsMnd0OTJ2NXM5OHRiIn0.iftE3PSzzKefF9YT6OjliQ" alt="Map of the Edmund Pettus Bridge in Selma, Alabama."></div>').attr("class", "staticMap");
+
+            //uses lat/long to display map of the hotel location
+            var map = $('<div class="imageDiv"><img src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/' + long + ',' + lat + ',14/400x240?access_token=pk.eyJ1Ijoiam9lbWFuaWFjaSIsImEiOiJja2hzNDVkeHcwNjdsMnd0OTJ2NXM5OHRiIn0.iftE3PSzzKefF9YT6OjliQ" alt="Map of ' + hotelName + ' location"></div>').attr("class", "staticMap");
+           
             //appends created HTML elements
             createdDiv.append(createdH2, "<hr>", map);
             mainDiv.append(createdDiv);

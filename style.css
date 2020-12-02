@@ -45,21 +45,25 @@ p {
 .hero-body {
   text-align: center;
 }
+
 #background {
   background-image: url('./images/brewery2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #myTitle {
   font-family: 'Nerko One', cursive;
   font-size: 60pt;
   color: rgb(247, 237, 100);
   text-shadow: 5px 3px 2px #0e0d0d;
 }
+
 #mySub{
   font-family: 'Anton', sans-serif;
   text-shadow: 3px 3px 3px #0e0d0d;
 }
+
 .navbar {
   position: sticky;
   top: 0;

@@ -9,18 +9,17 @@ function setInitialDisplay() {
     hotelSearch(localStorage.getItem("searchedCity"));
   }
 }
+
+//calls setInitialDisplay function
 setInitialDisplay();
 
 //Brewery API call
 function breweryCall(inputtedCity) {
 
   var cityName = inputtedCity;
-  var breweryType = "brewpub"
+  var breweryType = $("#breweryType").val();
   var breweryURL = "https://api.openbrewerydb.org/breweries?by_city=" + cityName;
-  //set localStorage
-
-
-
+  
   //Updates the breweryURL if a breweryType was selected
   if (breweryType) {
     breweryURL = breweryURL + "&by_type=" + breweryType;
@@ -33,8 +32,6 @@ function breweryCall(inputtedCity) {
     method: "GET"
 
   }).then(function (response) {
-
-    console.log(response);
 
     //Grabs the HTML element that the api information will be appended too
     var mainDiv = $(".breweries");
@@ -62,7 +59,6 @@ function breweryCall(inputtedCity) {
       //appends created HTML elements
       createdDiv.append(createdH2, "<hr>", createdP1, createdP2)
       mainDiv.append(createdDiv);
-
     }
   })
 }
@@ -75,14 +71,9 @@ $(".searchButton").on("click", function (event) {
 
   var inputtedCity = $(".input").val();
 
+  //sets local storage
   localStorage.setItem("searchedCity", inputtedCity);
 
   breweryCall(inputtedCity);
   hotelSearch(inputtedCity);
-});
-
-var dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function(event) {
-  event.stopPropagation();
-  dropdown.classList.toggle('is-active');
 });
