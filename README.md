@@ -55,5 +55,6 @@ to find the best hotel and brewery combination for you.
 * [Git Site](https://maniac-i.github.io/Beds-N-Brews/)
 * [Brewery Server-Side API](https://www.openbrewerydb.org/documentation)
 * [Hotel Server-Side API](https://rapidapi.com/apidojo/api/hotels4/endpoints)
+* [Maps Server-Side API](https://docs.mapbox.com/api/maps/#static-images)
   
 - - -
