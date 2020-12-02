@@ -40,7 +40,7 @@ that US travelers prefer activities that are in proximity. Therefore, we have de
 web application that let’s travelers find hotels and brewery. This allows users to search hotels 
 and breweries before deciding which city to travel to.  
 
-Insert Image  
+![image](https://user-images.githubusercontent.com/71363204/100807737-d6018400-3400-11eb-9f79-52ada6da7b02.png)   
 
 Here is an explanation of how to use the Beds-N-Brews web application. 
 
