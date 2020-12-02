@@ -44,7 +44,7 @@ function hotelSearch(inputtedCity) {
             var createdH2 = hotelNameHTML.attr("class", "hotelName");
 
             //uses lat/long to display map of the hotel location
-            var map = $('<div class="imageDiv"><img src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/' + long + ',' + lat + ',14/400x240?access_token=pk.eyJ1Ijoiam9lbWFuaWFjaSIsImEiOiJja2hzNDVkeHcwNjdsMnd0OTJ2NXM5OHRiIn0.iftE3PSzzKefF9YT6OjliQ" alt="Map of the Edmund Pettus Bridge in Selma, Alabama."></div>').attr("class", "staticMap");
+            var map = $('<div class="imageDiv"><img src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/' + long + ',' + lat + ',14/400x240?access_token=pk.eyJ1Ijoiam9lbWFuaWFjaSIsImEiOiJja2hzNDVkeHcwNjdsMnd0OTJ2NXM5OHRiIn0.iftE3PSzzKefF9YT6OjliQ" alt="Map of ' + hotelName + ' location"></div>').attr("class", "staticMap");
            
             //appends created HTML elements
             createdDiv.append(createdH2, "<hr>", map);
